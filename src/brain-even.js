@@ -1,5 +1,5 @@
 import {
-  askQuestion, congratUser, welcomeUser, greetUser, askName, logMessage,
+  congratUser, welcomeUser, greetUser, askName, logMessage, getAnswer,
 } from './cli.js';
 import generateRandomNumber from './numberGenerator.js';
 import isEven from './numbers.js';
@@ -16,7 +16,7 @@ export default function startBrainEven() {
   while (correctAnswersCount !== 3) {
     const number = generateRandomNumber(MAX_NUM);
     const isNumberEven = isEven(number);
-    const answer = askQuestion(number);
+    const answer = getAnswer(number);
     const correctAnswer = isNumberEven ? 'yes' : 'no';
     if (answer === correctAnswer) {
       correctAnswersCount += 1;

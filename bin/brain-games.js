@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-import { askName, welcomeUser, greetUser } from '../src/cli.js';
+import brainGame from '../games/brain-game.js';
 
-welcomeUser();
+brainGame();
 
-const userName = askName();
-greetUser(userName);

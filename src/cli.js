@@ -20,8 +20,6 @@ export function congratUser(name) {
   logMessage(`Congratulations, ${name}`);
 }
 
-export function askQuestion(number) {
-  logMessage('Answer "yes" if the number is even, otherwise answer "no".');
-  logMessage(`Question: ${number}`);
+export function getAnswer() {
   return readlineSync.question('Your answer: ');
 }
