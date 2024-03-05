@@ -1,21 +1,10 @@
 import generateRandomNumber from '../src/numberGenerator.js';
 import gameEngine from '../src/index.js';
+import { calc } from '../src/numbers.js';
 
 const MAX_NUM = 1000;
 const rule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
-
-function calc(num1, operator, num2) {
-  switch (operator) {
-    case '+':
-      return num1 + num2;
-    case '-':
-      return num1 - num2;
-    case '*':
-      return num1 * num2;
-    default:
-  }
-}
 
 function generateGameData() {
   const num1 = generateRandomNumber(0, MAX_NUM);

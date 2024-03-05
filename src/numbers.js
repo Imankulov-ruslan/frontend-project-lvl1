@@ -21,3 +21,24 @@ export function findGcd(num1, num2) {
   }
   return num1 + num2;
 }
+
+export function createProgression(start, step, length) {
+  const res = [];
+  for (let i = 0; i <= length; i += 1) {
+    const result = start + (i * step);
+    res.push(result);
+  }
+  return res;
+}
+
+export function calc(num1, operator, num2) {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+  }
+}

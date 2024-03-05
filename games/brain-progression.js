@@ -1,18 +1,10 @@
 import generateRandomNumber from '../src/numberGenerator.js';
 import gameEngine from '../src/index.js';
+import { createProgression } from '../src/numbers.js';
 
 const rule = 'What number is missing in the progression?';
 const maxStart = 100;
 const maxStep = 100;
-
-function createProgression(start, step, length) {
-  const res = [];
-  for (let i = 0; i <= length; i += 1) {
-    const result = start + (i * step);
-    res.push(result);
-  }
-  return res;
-}
 
 function generateGameData() {
   const start = generateRandomNumber(0, maxStart);
