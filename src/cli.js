@@ -17,7 +17,7 @@ export function greetUser(name) {
 }
 
 export function congratUser(name) {
-  logMessage(`Congratulations, ${name}`);
+  logMessage(`Congratulations, ${name}!`);
 }
 
 export function getAnswer() {
