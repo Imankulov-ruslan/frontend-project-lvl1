@@ -21,7 +21,7 @@ const gameEngine = (rule, generateGameData) => {
       correctAnswersCount += 1;
     } else {
       logMessage(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
-      correctAnswersCount = 0;
+      return
     }
   }
   congratUser(userName);
