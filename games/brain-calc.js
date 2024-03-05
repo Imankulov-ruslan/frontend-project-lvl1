@@ -20,8 +20,8 @@ function calc(num1, operator, num2) {
 }
 
 function generateGameData() {
-  const num1 = generateRandomNumber(MAX_NUM);
-  const num2 = generateRandomNumber(MAX_NUM);
+  const num1 = generateRandomNumber(0, MAX_NUM);
+  const num2 = generateRandomNumber(0, MAX_NUM);
   const operator = operators[Math.floor(Math.random() * operators.length)]
   const correctAnswer = String(calc(num1, operator, num2))
   return [`${num1} ${operator} ${num2}`, correctAnswer]

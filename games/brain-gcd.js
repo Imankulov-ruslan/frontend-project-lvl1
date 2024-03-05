@@ -13,8 +13,8 @@ function findGcd(num1, num2) {
 }
 
 function generateGameData() {
-  const num1 = generateRandomNumber(MAX_NUM);
-  const num2 = generateRandomNumber(MAX_NUM);
+  const num1 = generateRandomNumber(0, MAX_NUM);
+  const num2 = generateRandomNumber(0, MAX_NUM);
   const correctAnswer = String(findGcd(num1, num2))
   return [`${num1} ${num2}`, correctAnswer]
 }

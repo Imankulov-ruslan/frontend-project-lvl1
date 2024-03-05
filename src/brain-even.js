@@ -14,7 +14,7 @@ export default function startBrainEven() {
   greetUser(userName);
 
   while (correctAnswersCount !== 3) {
-    const number = generateRandomNumber(MAX_NUM);
+    const number = generateRandomNumber(0, MAX_NUM);
     const isNumberEven = isEven(number);
     const answer = getAnswer(number);
     const correctAnswer = isNumberEven ? 'yes' : 'no';
