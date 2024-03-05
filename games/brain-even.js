@@ -3,7 +3,7 @@ import isEven from '../src/numbers.js';
 import gameEngine from '../src/index.js';
 
 const MAX_NUM = 1000;
-const rule = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function generateGameData() {
   const number = generateRandomNumber(0, MAX_NUM);
