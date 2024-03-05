@@ -1,11 +1,11 @@
 import generateRandomNumber from '../src/numberGenerator.js';
 import gameEngine from '../src/index.js';
 
-const rule = "What number is missing in the progression?"
-const maxStart = 100
-const maxStep = 100
+const rule = 'What number is missing in the progression?';
+const maxStart = 100;
+const maxStep = 100;
 
-function createProgression (start, step, length) {
+function createProgression(start, step, length) {
   const res = [];
   for (let i = 0; i <= length; i += 1) {
     const result = start + (i * step);
@@ -25,10 +25,9 @@ function generateGameData() {
   const correctAnswer = `${progression[randomIndex]}`;
   progression[randomIndex] = '..';
 
-  return [`${progression.join(' ')}`, correctAnswer]
+  return [`${progression.join(' ')}`, correctAnswer];
 }
 
 export default function brainProgression() {
   gameEngine(rule, generateGameData);
-} 
-  
+}

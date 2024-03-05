@@ -1,4 +1,6 @@
-import { askName, getAnswer, greetUser, logMessage, welcomeUser, congratUser } from "./cli.js";
+import {
+  askName, getAnswer, greetUser, logMessage, welcomeUser, congratUser,
+} from './cli.js';
 
 const gameRounds = 3;
 let correctAnswersCount = 0;
@@ -9,7 +11,7 @@ const gameEngine = (rule, generateGameData) => {
   greetUser(userName);
   logMessage(rule);
 
-  while(correctAnswersCount < gameRounds) {
+  while (correctAnswersCount < gameRounds) {
     const [question, correctAnswer] = generateGameData();
     logMessage(`Question: ${question}`);
     const userAnswer = getAnswer();
@@ -22,7 +24,7 @@ const gameEngine = (rule, generateGameData) => {
       correctAnswersCount = 0;
     }
   }
-  congratUser(userName)
+  congratUser(userName);
 };
 
 export default gameEngine;
