@@ -3,7 +3,7 @@ import gameEngine from '../src/index.js';
 import { isPrime } from '../src/numbers.js';
 
 const MAX_NUM = 1000;
-const rule = 'Find the greatest common divisor of given numbers.';
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function generateGameData() {
   const num = generateRandomNumber(0, MAX_NUM);
