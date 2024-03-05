@@ -7,8 +7,8 @@ const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function generateGameData() {
   const num = generateRandomNumber(0, MAX_NUM);
-  const isNumberEven = isPrime(num);
-  const correctAnswer = isNumberEven ? 'yes' : 'no';
+  const isNumberPrime = isPrime(num);
+  const correctAnswer = isNumberPrime ? 'yes' : 'no';
   return [`${num}`, correctAnswer];
 }
 
