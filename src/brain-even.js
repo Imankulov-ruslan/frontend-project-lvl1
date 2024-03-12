@@ -1,8 +1,8 @@
 import {
-  congratUser, welcomeUser, greetUser, askName, logMessage, getAnswer,
-} from './cli.js';
-import generateRandomNumber from './numberGenerator.js';
-import isEven from './numbers.js';
+  congratUser, welcomeUser, greetUser, askName, getAnswer,
+} from './utils.js';
+import logMessage from './cli.js';
+import { isEven, generateRandomNumber } from './numbers.js';
 
 const MAX_NUM = 1000;
 let correctAnswersCount = 0;

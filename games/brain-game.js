@@ -1,8 +1,7 @@
-import readlineSync from 'readline-sync';
-import { logMessage } from '../src/cli.js';
+import { greetUser, welcomeUser, askName } from '../src/utils.js';
 
-export default function brainGame() {
-  logMessage('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  logMessage(`Hello, ${userName}!`);
+export default function runBrainGame() {
+  welcomeUser();
+  const userName = askName();
+  greetUser(userName);
 }

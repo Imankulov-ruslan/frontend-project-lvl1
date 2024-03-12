@@ -1,6 +1,7 @@
+import logMessage from './cli.js';
 import {
-  askName, getAnswer, greetUser, logMessage, welcomeUser, congratUser,
-} from './cli.js';
+  askName, getAnswer, greetUser, welcomeUser, congratUser,
+} from './utils.js';
 
 const gameRounds = 3;
 let correctAnswersCount = 0;

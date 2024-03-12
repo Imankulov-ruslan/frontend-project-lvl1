@@ -1,5 +1,4 @@
-import generateRandomNumber from '../src/numberGenerator.js';
-import isEven from '../src/numbers.js';
+import { isEven, generateRandomNumber } from '../src/numbers.js';
 import gameEngine from '../src/index.js';
 
 const MAX_NUM = 1000;
@@ -12,6 +11,6 @@ function generateGameData() {
   return [`${number}`, correctAnswer];
 }
 
-export default function brainEven() {
+export default function runBrainEven() {
   gameEngine(rule, generateGameData);
 }

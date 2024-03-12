@@ -1,6 +1,5 @@
-import generateRandomNumber from '../src/numberGenerator.js';
 import gameEngine from '../src/index.js';
-import { createProgression } from '../src/numbers.js';
+import { generateRandomNumber, createProgression } from '../src/numbers.js';
 
 const rule = 'What number is missing in the progression?';
 const maxStart = 100;
@@ -20,6 +19,6 @@ function generateGameData() {
   return [`${progression.join(' ')}`, correctAnswer];
 }
 
-export default function brainProgression() {
+export default function runBrainProgression() {
   gameEngine(rule, generateGameData);
 }

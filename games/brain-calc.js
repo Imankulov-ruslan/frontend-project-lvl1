@@ -1,6 +1,5 @@
-import generateRandomNumber from '../src/numberGenerator.js';
 import gameEngine from '../src/index.js';
-import { calc } from '../src/numbers.js';
+import { generateRandomNumber, calc } from '../src/numbers.js';
 
 const MAX_NUM = 1000;
 const rule = 'What is the result of the expression?';
@@ -14,6 +13,6 @@ function generateGameData() {
   return [`${num1} ${operator} ${num2}`, correctAnswer];
 }
 
-export default function brainCalc() {
+export default function runBrainCalc() {
   gameEngine(rule, generateGameData);
 }

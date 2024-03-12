@@ -1,6 +1,5 @@
-import generateRandomNumber from '../src/numberGenerator.js';
 import gameEngine from '../src/index.js';
-import { isPrime } from '../src/numbers.js';
+import { generateRandomNumber, isPrime } from '../src/numbers.js';
 
 const MAX_NUM = 1000;
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -12,6 +11,6 @@ function generateGameData() {
   return [`${num}`, correctAnswer];
 }
 
-export default function brainPrime() {
+export default function runBrainPrime() {
   gameEngine(rule, generateGameData);
 }
